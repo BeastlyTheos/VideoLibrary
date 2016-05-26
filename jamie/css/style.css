@@ -1,0 +1,317 @@
+@charset "UTF-8";
+@import 'reset.css';
+/* CSS Document */
+/*#############################################*/
+/*                Main Stucture
+/*#############################################*/
+
+body{
+	background-color:#413659;
+	font-size:12px;
+}
+
+#container{
+	width:100em;
+	background-color:#F2EFDF;
+	color:#413659;
+	margin:.5em auto;
+	border:.5em solid #656F8C;
+	border-radius: .5em;
+}
+
+#header{
+	width:99em;
+	border-bottom: 1.5em solid #656F8C;
+	padding:.5em;
+	overflow:hidden;
+}
+
+/*#content{
+	width:100%;
+	width:850px;
+}
+*/
+#footer{
+	clear:both;
+	width:100%;
+	background-color:#656F8C;
+	color: #F2EFDF;
+	text-align:center;
+}
+
+#nav{
+	clear:both;
+	width: 14em;
+	float:left;
+	padding:.5em;
+}
+
+#main{
+	float:right;
+	border-left: 1em solid #656F8C;
+	width:81em;
+	padding:1em;
+	min-height: 500px; 
+}
+
+/*#############################################*/
+/*                Header Section
+/*#############################################*/
+
+#header img{
+	height: 100px;
+	border: .5em solid #9BBFAB;
+	float:left;
+	border-radius: .5em;
+	margin-right: 1em;
+}
+
+#header h1 {
+	font-size:3em;
+	padding-top: 1em;
+		
+}
+
+#header h3{
+	font-size: 1.5em;
+}
+
+#header strong{
+	font-weight: bolder;
+	color:#9BBFAB;
+}
+
+
+
+/*#############################################*/
+/*                Navigation Section
+/*#############################################*/
+
+#nav a{
+	display: block;
+	padding: 1em;
+	background-color:#9BBFAB;
+	color:#413659;
+	border: .3em solid #413659;
+	border-radius: .3em;
+	text-decoration:none;
+	margin-top:.5em;
+	text-align:center;
+	font-size:1.3em;
+}
+
+#nav a:hover{
+	background-color:#413659;
+	color:#9BBFAB;
+	border: .3em solid #9BBFAB;
+}
+
+#nav a.active{
+	font-weight:bolder;
+	text-decoration:underline;
+}
+	
+/*#############################################*/
+/*                Form Styles
+/*#############################################*/
+
+#addvid{
+	font-size: 1.2em;
+}
+
+#addvid div{
+	margin:.5em;
+}
+
+#addvid div label{
+	display:inline-block;
+	width:10em;
+	text-align:right;
+	vertical-align:top;
+	padding-right: .5em;
+}
+
+#addvid fieldset{
+	margin-left:8em;
+	border: .3em solid #9BBFAB;
+	border-radius: .3em;
+	padding:.5em;
+	width:25em;
+}
+#addvid fieldset label{
+	padding-right:.5em;
+}
+
+#addvid .note{
+	font-size:1em;
+	color:#656F8C;
+	font-style:italic;
+}
+
+#addvid #buttons{
+	margin-left:8em;
+}
+
+/*#############################################*/
+/*                Footer Styles
+/*#############################################*/
+
+#footer h3{
+	font-size:1.2em;
+	font-style:italic;
+	padding: .5em;
+}
+
+/**************************Diplay Grid of Videos**********************/
+/***********************************************************/
+#displayvidgrid td{
+	width:100px;
+	padding:5px;
+}
+
+#displayvidgrid h2{
+	width: 100px;
+	text-align:center;
+}
+
+#displayvidgrid .imagecontainer{
+	width: 60px;
+	margin:auto;
+}
+
+
+/**************************Display Grid of Videos for Editing (Index) **********************/
+/***********************************************************/
+
+
+.editimg{background-image:url(../img/editicon.png);}
+.deleteimg{background-image:url(../img/trashimage.png);}
+.detailimg{background-image:url(../img/detailsicon.png);}
+.editimg, .deleteimg, .detailimg{
+	float:left;
+	display:block;
+	width: 24px;
+	height:24px;
+	padding: 2px;
+	background-repeat: no-repeat;
+}
+
+#editvidgrid{
+margin:auto;
+}
+
+#editvidgrid td{
+	width:150px;
+	padding:5px;
+}
+
+#editvidgrid h2{
+	width: 165px;
+	text-align:center;
+	font-size:1.2em;
+}
+
+#editvidgrid .imagecontainer{
+	width: 75px;
+	margin:auto;
+}
+
+#editvidgrid .icons{
+	width:84px;
+	margin:auto;
+}
+
+#main a{
+	color:#413659;
+	font-size: 1.3em;
+}
+
+
+/**************************Vid Details**********************/
+/***********************************************************/
+
+#viddets{
+	width: 600px; margin: 20px auto; padding: 20px 20px;
+	border: 5px solid #9BBFAB;
+	box-shadow: 0px 0px 8px #444;
+	-moz-box-shadow: 0px 0px 8px #444;
+	-webkit-box-shadow: 0px 0px 8px #444;
+	font-size:1.3em;
+	border-radius:5px;
+	overflow:hidden;
+}
+
+#viddets #poster{
+	float:left;
+	overflow:hidden;
+}
+
+/*
+#viddets #poster img{
+	height: 200px;
+}*/
+
+ #viddets #details {
+	float:right;
+	width:400px;
+	color: #999;
+}
+
+#viddets #details td{
+	padding-bottom: 10px;
+} 
+
+#viddets #details h2{
+	font-size: 1.3em;
+	color:#413659;
+	padding-bottom: 10px;
+}
+
+#viddets #details .labels{
+		color:#413659;
+		font-weight:bold;
+		padding-right:3px;
+}
+
+#viddets #plot{
+	clear:left;
+	width: 500px;
+	margin:auto;
+	margin-top:5px;
+	padding-top: 10px;
+	color: #999;
+	
+}
+
+.yes{
+	padding-left:18px;
+	background:url(../img/button_ok16.png) no-repeat left;
+	padding-right: 5px;
+}
+
+.no{
+	padding-left:18px;
+	background:url(../img/button_cancel16.png) no-repeat left;
+	padding-right: 5px;
+}
+
+
+/**************************login**********************/
+/***********************************************************/
+
+#loginformcont, #searchformcont{
+	width: 300px; margin: 20px auto; padding: 20px 20px;
+	border: 5px solid #9BBFAB;
+	box-shadow: 0px 0px 8px #444;
+	-moz-box-shadow: 0px 0px 8px #444;
+	-webkit-box-shadow: 0px 0px 8px #444;
+	font-size:1.3em;
+	border-radius:5px;
+	overflow:hidden;
+}
+
+#loginformcont label{
+	display:inline-block;
+	width:100px;
+	text-align:left;
+}

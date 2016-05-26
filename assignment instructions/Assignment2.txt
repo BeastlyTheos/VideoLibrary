@@ -1,0 +1,80 @@
+Trent University 
+COIS 3420H 
+Assignment #2 
+Due: 16 November 2015 
+
+
+The purpose of the second assignment is to use MySQL & PHP to make the pages you created in assignment #1 functional. 
+
+First you will need to design three database tables, one to store user information (I would suggest an autonumber primary key), one to store movie 
+information, and one utility table to store genres. Be sure to make intelligent decisions for you database design. Consider which fields should be 
+indexed for efficiency. Choose appropriate field types and lengths (E.g. something like MPAA rating should be stored in a Enum field since there are a 
+fixed number of possibilities). The movie table should contain a foreign key to the user table (allowing movies to be associated with the user who adds 
+them). You can use phpMyAdmin to add the values to the genre table. 
+
+Once your database tables have been added, incorporate the php to make your application functional. Things you’ll need to consider are: 
+
+• 
+The Login Page (login.php)– Validates the user credentials against the database, and creates a session (including the users 
+database id). This session is then checked on all other pages to make sure the user is logged in (otherwise send them to the login 
+page). Putting the user’s id in session will allow this to be included when inserting movies. It should also set a cookie where 
+appropriate. 
+• 
+Create account – Should validate collected information, and insert into the database. Create the appropriate session for the 
+logged in user, then redirect to the main page. 
+• 
+Edit account – populate the form fields with the database information for the logged in user. On form submission, validate 
+information and update database record accordingly. 
+• 
+Delete account – delete movie and user information for the logged in user, then destroy the cookie and session. 
+• 
+The Main Page (index.php) will display all the movies in the collection in a 3X4 table (12 movies at a time), with previous and next 
+links to show the next/prev 12 movies. These movies should be pulled from the database, matched on the logged in user. (Note: 
+you can use the limit function in mysql to call 12 movies starting at a particular position, and a dynamic url parameter in the 
+next/previous link, to indicate what the start position should be). Underneath each movie is an image link to the edit, delete, and 
+details page for that movie (Note: these links will need to contain a dynamic url parameter corresponding to the movie id, in order 
+for the linked pages to know which movie to edit/delete/display details) 
+• 
+The Add Page (processAddVid.php) Take the information collected on the add movie form validates it, and inserts it into the 
+database. Make sure to include the user id of the logged in user. 
+• 
+Edit Page – Populate form with database information for movie identified by the id in the URL. On form submission, validate 
+information and update database record accordingly. 
+• 
+The Display Details Page (displayDetails.php) display all the details for a particular movie ,nicely formatted. This information 
+should come from the database based on the movie id in the URL. 
+• 
+The Delete Video Page – deletes a movie from the database based on the movie id in the URL, then redirects back to the main 
+page. 
+• 
+The Search Page (search.php) this page contains a form allowing the user to specify what term to search for, and a four column 
+table displaying the results of the search. The table should be populated from the database using a wildcard search with the search 
+term provided. The search term should remain (sticky) in the textbox 
+• 
+The Logout Page -Destroys the session, and deletes the cookie to log the user out, redirects to the login page. 
+• 
+Genre List – the genre list on the add and edit pages should be populated from the database. 
+• 
+Navigation -the navigation should be modified to be dynamic, only showing logical links (Example: log out if logged in, login if 
+logged out) 
+• 
+Security – make sure to show appropriate consideration for the security of your application. (password protection, sql_injection, 
+cross site scripting) 
+Your functional version must also validate and be tested cross browser and cross platform. If you are unable to fix cross browser problems, document 
+them in a testing file and include it with your submission 
+
+Submission 
+
+Compress (zip or rar) the completed directory structure (html/php files should be in root folder, images in an img folder, and css in a style folder), along 
+with a file containing a database_dump of your current database, then submit the compressed file, along with credentials for an existing user account in 
+your application. 
+
+your submission MUST include current/maintained/updated versions of your naming convention, your data dictionary as well as your project issues 
+document. 
+
+The entire site should also be located on a publically accessible webserver (one provided or your own) and your submission should include a link to the 
+index page. 
+
+Also remember to submit a testing file which includes any cross browser/platform issues you were unable to resolve. 
+
+

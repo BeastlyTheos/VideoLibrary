@@ -1,0 +1,274 @@
+.left{float:left;}
+.right{float:right;}
+.PlotSummary{width:100%;}
+
+a.Menu{border:4px;}
+a:visited{color:purple;}
+a:hover{background-color:gray;}
+input{width:30%;}
+label{width:60%;display: inline-block;}
+li{display:inline;}
+p.Main{text-indent:3em;}
+ul{float:left;width:100%;list-style-type:none;}
+
+/******Global styles*/
+body{
+	background-color:#413659;
+	font-size:12px;
+}
+#container{
+	width:100em;
+	background-color:#F2EFDF;
+	color:#413659;
+	margin:.5em auto;
+	border:.5em solid #656F8C;
+	border-radius: .5em;
+}
+
+.Header{
+	border-bottom: 1.5em solid #656F8C;
+	padding:.5em;
+	overflow:hidden;
+}
+
+.Header img{
+	height: 100px;
+	border: .5em solid #9BBFAB;
+	float:left;
+	border-radius: .5em;
+	margin-right: 1em;
+}
+
+#TitleText {
+	font-size:3em;
+	padding-top: 1em;
+		
+}
+#SubTitle{
+	font-size: 1.5em;
+}
+
+b{
+	font-weight: bolder;
+	color:#9BBFAB;
+}
+
+.InputValid{visibility:hidden;}
+
+.InputError{visibility:visible;text-color:red;}
+/*****Menu*/
+.Menu{
+	clear:both;
+	width: 14em;
+	float:left;
+	padding:.5em;
+}
+
+.Menu a{
+	display: block;
+	padding: 1em;
+	background-color:#9BBFAB;
+	color:#413659;
+	border: .3em solid #413659;
+	border-radius: .3em;
+	text-decoration:none;
+	margin-top:.5em;
+	text-align:center;
+	font-size:1.3em;
+}
+
+.Menu a:hover{
+	background-color:#413659;
+	color:#9BBFAB;
+	border: .3em solid #9BBFAB;
+}
+
+.Menu a.active{
+	font-weight:bolder;
+	text-decoration:underline;
+}
+
+.Main{
+	float:right;
+	border-left: 1em solid #656F8C;
+	width:81em;
+	padding:1em;
+	min-height: 500px; 
+}
+.Main a{
+	color:#413659;
+	font-size: 1.3em;
+}
+
+
+
+
+
+
+
+/****Footer */
+.Footer{
+	clear:both;
+	width:100%;
+	background-color:#656F8C;
+	color: #F2EFDF;
+	text-align:center;
+	font-size:1.2em;
+	font-style:italic;
+	padding: .5em;
+}
+
+
+/*#############################################*/
+/*                Form Styles
+/*#############################################*/
+
+form{
+	font-size: 1.2em;
+}
+
+form div{
+	margin:.5em;
+}
+
+form div label{
+	display:inline-block;
+	width:10em;
+	text-align:right;
+	vertical-align:top;
+	padding-right: .5em;
+}
+
+#form fieldset{
+	margin-left:8em;
+	border: .3em solid #9BBFAB;
+	border-radius: .3em;
+	padding:.5em;
+	width:25em;
+}
+#form fieldset label{
+	padding-right:.5em;
+}
+
+form .buttons{
+	margin-left:8em;
+}
+
+
+/*index*/
+.CellTitle{text-align:center;}
+.EditIcon{background-image:url(../imag/editicon.png);}
+.DeleteIcon{background-image:url(../imag/trashimage.png);}
+.DetailsIcon{background-image:url(../imag/detailsicon.png);}
+.DetailsIcon, .EditIcon, .DeleteIcon{
+	float:left;
+	display:block;
+	width: 24px;
+	height:24px;
+	padding: 2px;
+	background-repeat: no-repeat;
+}
+table{margin:auto;}
+td{width:150px;padding:5px;}
+.VideoTitle{
+	width: 165px;
+	text-align:center;
+	font-size:1.2em;
+}
+.CoverArtContainer{
+	width: 75px;
+	margin:auto;
+}
+
+.IconContainer{
+	width:84px;
+	margin:auto;
+}
+
+/**************************Display Details**********************/
+/***********************************************************/
+
+#DetailsMain{
+	width: 600px; margin: 20px auto; padding: 20px 20px;
+	border: 5px solid #9BBFAB;
+	box-shadow: 0px 0px 8px #444;
+	-moz-box-shadow: 0px 0px 8px #444;
+	-webkit-box-shadow: 0px 0px 8px #444;
+	font-size:1.3em;
+	border-radius:5px;
+	overflow:hidden;
+}
+
+#DetailsMain img{
+	overflow:hidden;
+}
+
+ #DetailsMain #details {
+	float:right;
+	width:400px;
+	color: #999;
+}
+
+
+details h1{
+	font-size: 1.3em;
+	color:#413659;
+	padding-bottom: 10px;
+}
+
+#DetailsMain #details .label{
+		color:#413659;
+		font-weight:bold;
+		padding-right:3px;
+}
+
+#DetailsMain #plot{
+	clear:left;
+	width: 500px;
+	margin:auto;
+	margin-top:5px;
+	padding-top: 10px;
+	color: #999;
+text-indent:50px;
+	}
+
+div.rateit, .rateit div {
+	margin:0px;
+	}
+
+
+/**** did not implement any of the css from below here
+.yes{
+	padding-left:18px;
+	background:url(../imag/button_ok16.png) no-repeat left;
+	padding-right: 5px;
+}
+
+.no{
+	padding-left:18px;
+	background:url(../imag/button_cancel16.png) no-repeat left;
+	padding-right: 5px;
+}
+
+
+/**************************login**********************/
+/***********************************************************/
+
+/***** did not implement this either
+#loginformcont, #searchformcont{
+	width: 300px; margin: 20px auto; padding: 20px 20px;
+	border: 5px solid #9BBFAB;
+	box-shadow: 0px 0px 8px #444;
+	-moz-box-shadow: 0px 0px 8px #444;
+	-webkit-box-shadow: 0px 0px 8px #444;
+	font-size:1.3em;
+	border-radius:5px;
+	overflow:hidden;
+}
+
+#Rloginformcont label{
+	display:inline-block;
+	width:100px;
+	text-align:left;
+}
+	****/

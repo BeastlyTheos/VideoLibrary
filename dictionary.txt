@@ -1,0 +1,30 @@
+php files: 
+index.php
+add_account.php, edit_account.php, delete_account.php,
+login.php, logout.php
+add_video.php, edit_video.php, delete_video.php
+DisplayDetails.php, displays video details
+getVideoGrid.php, compiles the data, and is called by both DisplayDetails and index.php
+
+library files: 
+functions.php, custom functions, including templating functions for header, menu, footer, and form validation functions
+sql.php, when included, connects to mysql, and creates $sql for calling queries etc
+session_start.php, when included, calls $_SESSION_START(), and sets $loggedIn to true if applicable, otherwise, $loggedIn = false
+
+form field names for user accounts: 
+username, firstName, lastName, email, password, passwordConfirmation, sex, age, inactivityEmails,
+
+form field names for video entries: 
+title, stars (might display as "rating"), rating, genre, releaseYear, runtime, theatreReleaseDate, DVDRleaseDate, actors, coverArt, studio, plotSummary, hasDVDFormat, hasBlueRayFormat, hasSDFormat, hasHDFormat
+
+css classes: 
+Header, Footer, Main, Menu
+InputValid, default class that hides form error messages
+InputError, class that's applied to error messages to make them visible
+applied 
+
+css IDs: TitleText, SubTitle
+
+user variables are in $_SESSION['user']
+
+

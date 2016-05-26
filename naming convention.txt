@@ -1,0 +1,4 @@
+form input fields are named the same as their label text, but using camel casing
+class names have no spaces nor underscores, and each word starts with capital
+html files are named with underscores seperating each word, lower case, except for getVideoGrid, but that's more like a function file
+php variables are named like their html form counterparts
